@@ -1,0 +1,24 @@
+{
+  "name": "Elecciones2018",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Injecting stuff",
+  "homepage_url": "http://danharper.me",
+  "browser_action": {
+    "default_title": "Inject!"
+  },
+   "content_scripts": [
+     {
+      "matches": ["<all_urls>"],
+      "js": [
+            "content.js"
+          ]
+     }
+   ],
+   "web_accessible_resources": ["content.js","inject.js"],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
