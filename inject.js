@@ -99,7 +99,7 @@ $(function() {
             if($(listaActiva+' option').size() > 0){
                $(listaActiva+' option:first').attr('selected','selected');
                 if (procesar()) {
-                    setTimeout(recorrer, 3000);
+                    setTimeout(recorrer, 2000);
                 } 
             }else{
                 terminar();
@@ -117,7 +117,7 @@ $(function() {
                 console.log("existen "+$(listaActiva+' option').size()+" elementos");
                 $( listaActiva ).unbind();
                 if (procesar()) {
-                    setTimeout(recorrer, 3000);
+                    setTimeout(recorrer, 2000);
                 }
             }
         });
