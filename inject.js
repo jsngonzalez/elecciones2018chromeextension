@@ -3,6 +3,7 @@ $(function() {
     //alert("hola");
 
     var listaActiva='';
+    var servicio='https://us-central1-elecciones2018-f1737.cloudfunctions.net/guardar';
 
     
     function scanear(){
@@ -34,7 +35,7 @@ $(function() {
             });
 
             $.ajax({
-                    url: 'https://us-central1-elecciones2018-f1737.cloudfunctions.net/guardar',
+                    url: servicio,
                     dataType: "json",
                     method: 'POST',
                     crossDomain: true,
